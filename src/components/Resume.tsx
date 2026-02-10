@@ -8,10 +8,9 @@ import ToolCard from "@/components/ui/ToolCard";
 const Resume = () => {
   return (
     <motion.section
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.3 }}
-      variants={staggerContainer(0)}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.1 }}
       className="scroll-mt-10 mt-30"
       id="resume"
     >
@@ -30,10 +29,11 @@ const Resume = () => {
         brings both technical potential and strong professional maturity to
         every team.
       </motion.p>
-      <div className="grid md:grid-cols-2 gap-x-10 my-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 sm:gap-x-10 my-10">
         <motion.div variants={fadeUp} className="mb-16 md:mb-0">
           <h2 className="font-semibold text-3xl">Education</h2>
           <div className="border-l border-neutral-700 mt-10 ml-4 pl-6">
+            <h1>test</h1>
             {education.map((item, i) => {
               return <ExpCard key={i} {...item} />;
             })}
@@ -51,7 +51,7 @@ const Resume = () => {
       <div className="my-16">
         <motion.h2
           variants={fadeUp}
-          className=" text-3xl font-semibold mb-8 capitalize"
+          className="text-lg sm:text-3xl font-semibold mb-8 capitalize"
         >
           My Stack
         </motion.h2>
