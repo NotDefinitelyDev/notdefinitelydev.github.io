@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { fadeUp, staggerContainer } from "@/lib/animations";
+import { staggerContainer } from "@/lib/animations";
 import SectionHeader from "@/components/SectionHeader";
 import { projectsData } from "@/constants";
 import ProjectCard from "@/components/ui/ProjectCard";

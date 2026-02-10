@@ -1,9 +1,8 @@
 import { fadeUp } from "@/lib/animations";
 import { type ProjectType } from "@/types/type";
 import { motion } from "motion/react";
-import { span } from "motion/react-client";
 
-const ProjectCard = ({ imgSrc, title, tags, projectLink }: ProjectType) => {
+const ProjectCard = ({ imgSrc, title, tags }: ProjectType) => {
   return (
     <motion.div variants={fadeUp} className="relative">
       <figure className="overflow-hidden rounded-md">
