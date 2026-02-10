@@ -4,15 +4,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-body {
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
-}
-
-body::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
-}
-
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -159,15 +150,5 @@ body::-webkit-scrollbar {
   }
   body {
     @apply bg-background text-foreground font-syne;
-  }
-}
-
-@layer utilities {
-  .no-scrollbar::-webkit-scrollbar {
-    display: none !important;
-  }
-  .no-scrollbar {
-    -ms-overflow-style: none !important;
-    scrollbar-width: none !important;
   }
 }

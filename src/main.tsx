@@ -9,7 +9,7 @@ import ProfileCard from "./components/ProfileCard";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <div className="min-h-screen lg:justify-center lg:items-start lg:flex lg:gap-10">
+    <div className="min-h-screen lg:justify-center lg:items-start lg:flex lg:gap-10 overflow-hidden">
       <Sidebar />
       <FloatingMenu />
       <ProfileCard />
